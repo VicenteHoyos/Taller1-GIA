@@ -17,7 +17,7 @@ public class HelloApplication {
 		SpringApplication.run(HelloApplication.class, args);
 	}
         @GetMapping("/{firstName}/{lastName}")
-        public String sayHellow(
+        public String sayHello(
         @PathVariable ("firstName") String firstName,
         @PathVariable ("lastName") String lastName){
             return String.format("Hello %s %s", firstName, lastName);
